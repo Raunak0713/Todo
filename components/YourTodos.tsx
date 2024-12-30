@@ -203,8 +203,10 @@ const YourTodos = () => {
               </div>
             </div>
             <DialogFooter>
-              <Button onClick={handleSaveEdit}>Save</Button>
-              <Button onClick={() => setIsEditDialogOpen(false)}>Cancel</Button>
+              <div className="button-group">
+                <Button onClick={handleSaveEdit}>Save</Button>
+                <Button onClick={() => setIsEditDialogOpen(false)}>Cancel</Button>
+              </div>
             </DialogFooter>
           </DialogContent>
         </Dialog>

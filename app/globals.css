@@ -70,3 +70,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the spacing as needed */
+}
+
+@media (min-width: 600px) {
+  .button-group {
+    flex-direction: row; /* Align buttons horizontally on larger screens */
+    gap: 0; /* Remove spacing when horizontal */
+  }
+}
