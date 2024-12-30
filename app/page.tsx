@@ -27,10 +27,10 @@ export default function Home() {
               </div>
             ) : (
               <div>
-                <Button className="bg-red-600 text-white py-3 px-6 rounded-md text-lg hover:bg-red-700 transition-colors duration-300">
+                <Button onClick={() => router.push("/dashboard")} className="bg-red-600 text-white py-3 px-6 rounded-md text-lg hover:bg-red-700 transition-colors duration-300">
                   Get Started
                 </Button>
-                <Button className="bg-transparent  text-white py-3 px-6 rounded-md text-lg hover:bg-red-600 hover:text-black transition-all duration-300">
+                <Button onClick={() => router.push("/dashboard")} className="bg-transparent  text-white py-3 px-6 rounded-md text-lg hover:bg-red-600 hover:text-black transition-all duration-300">
                   Learn More
                 </Button>
               </div>
@@ -39,9 +39,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <footer className="bg-black text-center text-gray-400 py-6">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2025 TaskNinja. All rights reserved.</p>
       </footer>
     </div>
   );
